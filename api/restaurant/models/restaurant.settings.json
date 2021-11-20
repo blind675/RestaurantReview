@@ -19,6 +19,24 @@
     "reviews": {
       "via": "restaurant",
       "collection": "review"
+    },
+    "minRating": {
+      "type": "integer",
+      "max": 5,
+      "min": 1
+    },
+    "maxRating": {
+      "type": "integer",
+      "max": 5,
+      "min": 1
+    },
+    "averageRating": {
+      "type": "integer",
+      "max": 5,
+      "min": 1
+    },
+    "latestReview": {
+      "model": "review"
     }
   }
 }
