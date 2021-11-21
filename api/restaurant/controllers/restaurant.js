@@ -48,7 +48,6 @@ module.exports = {
       averageRating: newAverageRating,
       minRating: Math.min(restaurant.minRating, rating),
       maxRating: Math.max(restaurant.maxRating, rating),
-      latestReview: {id: review.id},
     });
 
     return ctx.created(review);
