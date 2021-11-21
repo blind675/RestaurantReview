@@ -8,7 +8,7 @@
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -16,7 +16,9 @@
       "type": "text"
     },
     "rating": {
-      "type": "integer"
+      "type": "integer",
+      "max": 5,
+      "min": 1
     },
     "restaurant": {
       "via": "reviews",
@@ -26,6 +28,9 @@
       "plugin": "users-permissions",
       "model": "user",
       "via": "reviews"
+    },
+    "authorName": {
+      "type": "string"
     }
   }
 }

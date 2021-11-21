@@ -33,6 +33,14 @@
       }
     },
     {
+      "method": "POST",
+      "path": "/restaurants/:id/reviews",
+      "handler": "restaurant.addReview",
+      "config": {
+        "policies": []
+      }
+    },
+    {
       "method": "PUT",
       "path": "/restaurants/:id",
       "handler": "restaurant.update",

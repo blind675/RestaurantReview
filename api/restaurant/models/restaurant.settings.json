@@ -31,7 +31,7 @@
       "min": 1
     },
     "averageRating": {
-      "type": "integer",
+      "type": "decimal",
       "max": 5,
       "min": 1
     },
